@@ -1,7 +1,9 @@
 Code Book
 
+Instruction List; Manual setup steps
+
 Step 1:
-Download the data from url
+Download the (raw) data from url
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Step 2:
@@ -18,5 +20,97 @@ Step 3:
 Note: Be sure working directory is set, so that the /data folder in step 2 can be found within the working directory.
 
 Runs script run_analysis.R 
+
+-------------------------------------------------------------
+Complete List of Data in the Output dataset 'summarydata.txt'
+
+Units: All units of fields prefixed with "t" are an average of g's (gravitational unit of force).
+All units prefixed with "f" are frequency in Hz.
+
+The data has the following 81 Columns:
+
+Subject			Integer identifier representing the person who used the Smartphone
+Activity		Six activities that were measured  (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+tBodyAcc-mean()-X	Mean value  of X - Body Accelerometer (units: g)
+tBodyAcc-mean()-Y	Mean value  of Y - Body Accelerometer (units: g)
+tBodyAcc-mean()-Z	Mean value  of Z - Body Accelerometer (units: g)
+tBodyAcc-std()-X	Standard Deviation value  of X - Body Accelerometer (units: g)
+tBodyAcc-std()-Y	Standard Deviation value  of Y - Body Accelerometer (units: g)
+tBodyAcc-std()-Z	Standard Deviation value  of Z - Body Accelerometer (units: g)
+tGravityAcc-mean()-X	Mean value  of X - Gravity Acceleration(units: g)
+tGravityAcc-mean()-Y	Mean value  of Y - Gravity Acceleration(units: g)
+tGravityAcc-mean()-Z	Mean value  of Z - Gravity Acceleration(units: g)
+tGravityAcc-std()-X	Standard Deviation value  of X - Gravity Acceleration(units: g)
+tGravityAcc-std()-Y	Standard Deviation value  of Y - Gravity Acceleration(units: g)
+tGravityAcc-std()-Z	Standard Deviation value  of Z - Gravity Acceleration(units: g)
+tBodyAccJerk-mean()-X	Mean value  of X - Body Acceleration Jerk(units: g)
+tBodyAccJerk-mean()-Y	Mean value  of Y - Body Acceleration Jerk(units: g)
+tBodyAccJerk-mean()-Z	Mean value  of Z - Body Acceleration Jerk(units: g)
+tBodyAccJerk-std()-X	Standard Deviation value  of X - Body Acceleration Jerk(units: g)
+tBodyAccJerk-std()-Y	Standard Deviation value  of Y - Body Acceleration Jerk(units: g)
+tBodyAccJerk-std()-Z	Standard Deviation value  of Z - Body Acceleration Jerk(units: g)
+tBodyGyro-mean()-X	Mean value  of X - Body Gyroscope(units: g)
+tBodyGyro-mean()-Y	Mean value  of Y - Body Gyroscope(units: g)
+tBodyGyro-mean()-Z	Mean value  of Z - Body Gyroscope(units: g)
+tBodyGyro-std()-X	Standard Deviation value  of X - Body Gyroscope(units: g)
+tBodyGyro-std()-Y	Standard Deviation value  of Y - Body Gyroscope(units: g)
+tBodyGyro-std()-Z	Standard Deviation value  of Z - Body Gyroscope(units: g)
+tBodyGyroJerk-mean()-X	Mean value  of X - Body Gyroscope Jerk(units: g)
+tBodyGyroJerk-mean()-Y	Mean value  of Y - Body Gyroscope Jerk(units: g)
+tBodyGyroJerk-mean()-Z	Mean value  of Z - Body Gyroscope Jerk(units: g)
+tBodyGyroJerk-std()-X	Standard Deviation value  of X - Body Gyroscope Jerk(units: g)
+tBodyGyroJerk-std()-Y	Standard Deviation value  of Y - Body Gyroscope Jerk(units: g)
+tBodyGyroJerk-std()-Z	Standard Deviation value  of Z - Body Gyroscope Jerk(units: g)
+tBodyAccMag-mean()	Mean value   - Body Acceleration Mag(units: g)
+tBodyAccMag-std()	Standard Deviation value   - Body Acceleration Mag(units: g)
+tGravityAccMag-mean()	Mean value   - Body Acceleration Mag(units: g)
+tGravityAccMag-std()	Standard Deviation value   - Body Acceleration Mag(units: g)
+tBodyAccJerkMag-mean()	Mean value   - Body Acceleration Mag(units: g)
+tBodyAccJerkMag-std()	Standard Deviation value   - Body Acceleration Mag(units: g)
+tBodyGyroMag-mean()	Mean value   - Body Acceleration Mag(units: g)
+tBodyGyroMag-std()	Standard Deviation value   - Body Acceleration Mag(units: g)
+tBodyGyroJerkMag-mean()	Mean value   - (units: g)
+tBodyGyroJerkMag-std()	Standard Deviation value   - (units: g)
+fBodyAcc-mean()-X	Mean value  of X - Body Accelerometer  (units: Hz)
+fBodyAcc-mean()-Y	Mean value  of Y - Body Accelerometer  (units: Hz)
+fBodyAcc-mean()-Z	Mean value  of Z - Body Accelerometer  (units: Hz)
+fBodyAcc-std()-X	Standard Deviation value  of X - Body Accelerometer  (units: Hz)
+fBodyAcc-std()-Y	Standard Deviation value  of Y - Body Accelerometer  (units: Hz)
+fBodyAcc-std()-Z	Standard Deviation value  of Z - Body Accelerometer  (units: Hz)
+fBodyAcc-meanFreq()-X	Mean value  of X - Body Acceleration Jerk (units: Hz)
+fBodyAcc-meanFreq()-Y	Mean value  of Y - Body Acceleration Jerk (units: Hz)
+fBodyAcc-meanFreq()-Z	Mean value  of Z - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-mean()-X	Mean value  of X - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-mean()-Y	Mean value  of Y - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-mean()-Z	Mean value  of Z - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-std()-X	Standard Deviation value  of X - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-std()-Y	Standard Deviation value  of Y - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-std()-Z	Standard Deviation value  of Z - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-meanFreq()-X	Mean value  of X - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-meanFreq()-Y	Mean value  of Y - Body Acceleration Jerk (units: Hz)
+fBodyAccJerk-meanFreq()-Z	Mean value  of Z - Body Acceleration Jerk (units: Hz)
+fBodyGyro-mean()-X	Mean value  of X - Body Gyroscope (units: Hz)
+fBodyGyro-mean()-Y	Mean value  of Y - Body Gyroscope (units: Hz)
+fBodyGyro-mean()-Z	Mean value  of Z - Body Gyroscope (units: Hz)
+fBodyGyro-std()-X	Standard Deviation value  of X - Body Gyroscope (units: Hz)
+fBodyGyro-std()-Y	Standard Deviation value  of Y - Body Gyroscope (units: Hz)
+fBodyGyro-std()-Z	Standard Deviation value  of Z - Body Gyroscope (units: Hz)
+fBodyGyro-meanFreq()-X	Mean value  of X - Body Gyroscope (units: Hz)
+fBodyGyro-meanFreq()-Y	Mean value  of Y - Body Gyroscope (units: Hz)
+fBodyGyro-meanFreq()-Z	Mean value  of Z - Body Gyroscope (units: Hz)
+fBodyAccMag-mean()	Mean value   - Body Aceleration Mag (units: Hz)
+fBodyAccMag-std()	Standard Deviation value   - Body Aceleration Mag (units: Hz)
+fBodyAccMag-meanFreq()	Mean value   - Body Aceleration Mag (units: Hz)
+fBodyBodyAccJerkMag-mean()	Mean value   - Body Acceleration Jerk Mag (units: Hz)
+fBodyBodyAccJerkMag-std()	Standard Deviation value   - Body Acceleration Jerk Mag (units: Hz)
+fBodyBodyAccJerkMag-meanFreq()	Mean value   - Body Acceleration Jerk Mag (units: Hz)
+fBodyBodyGyroMag-mean()	Mean value   - Body Gyrosocpe Mag (units: Hz)
+fBodyBodyGyroMag-std()	Standard Deviation value   - Body Gyrosocpe Mag (units: Hz)
+fBodyBodyGyroMag-meanFreq()	Mean value   - Body Gyrosocpe Mag (units: Hz)
+fBodyBodyGyroJerkMag-mean()	Mean value   - Body Gyroscope Jerk Mag (units: Hz)
+fBodyBodyGyroJerkMag-std()	Standard Deviation value   - Body Gyroscope Jerk Mag (units: Hz)
+fBodyBodyGyroJerkMag-meanFreq()	Mean value   - Body Gyroscope Jerk Mag (units: Hz)
+
+
 
 
