@@ -1,0 +1,22 @@
+Code Book
+
+Step 1:
+Download the data from url
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Step 2:
+Unzip these files into a subfolder "/data"
+- 1) subject_train.txt
+- 2) X_train.txt
+- 3) y_train.txt
+- 4) subject_test.txt
+- 5) X_test.txt
+- 6) y_test.txt
+
+
+Step 3: 
+Note: Be sure working directory is set, so that the /data folder in step 2 can be found within the working directory.
+
+Runs script run_analysis.R 
+
+
