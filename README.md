@@ -18,6 +18,18 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 =================
 See CodeBook.txt for details of how the data was assembled, selected, and description of fields.
 
+# run_analysis.R Script description 
+=================
+The script first merges the files containing training data and test data, subject identiers, activity data, and activity reference data.
+
+In addition to merging, column headers were applied, loaded from features.txt
+
+The data then selected the fields needed, putting into a data.frame named "tidydata". Only means and Standard Deviation columns were selected in addition to Subject and Activity.
+
+The tidydata was summarized by grouping by Subject and Activity, and getting the mean value of each remaining feature. This was stored in a data.table named "summarydata".
+
+SummaryData was then persisted to a "Pipe-delimited" text file "summarydata.txt".
+
 
 Feature Selection 
 =================
